@@ -1,0 +1,5 @@
+PetId,Name,Species,Age,Vaccinated,SpecialNeeds,DaysInCare,HistoryNotes,Status
+P-101,Bella,Dog,3,true,false,12,Regular intake,AVAILABLE
+P-102,Milo,Cat,1,false,false,20,Fever and respiratory cough,AVAILABLE
+P-103,Barnaby,Rabbit,4,true,false,5,Surrendered healthy,AVAILABLE
+P-104,Jasper,Dog,10,true,true,45,Arthritis senior rescue,AVAILABLE

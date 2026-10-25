@@ -16,6 +16,7 @@ LearningTheBasics/
 ├── Machine_Problems/                # Problem specifications, prompts, and published PDFs
 │   ├── Milestone1_Machine_Problem.pdf
 │   ├── Milestone2_Machine_Problem.pdf
+│   ├── Milestone3_Machine_Problem.pdf
 │   ├── Cybersecurity_IDS_Machine_Problem.pdf
 │   └── FinTech_Remittance_Machine_Problem.pdf
 │
@@ -35,11 +36,13 @@ LearningTheBasics/
 │   ├── Milestone1Notes.cs           # Variables, Conditionals & Logical Operators
 │   ├── Milestone2Notes.cs           # Loops, Arrays, Methods & File Streams
 │   ├── MilestoneMachine2Notes.cs    # Slicing, Temporal Analysis & Defensive Rules
+│   ├── Milestone3Notes.cs           # Logic, Scope, Switch-Case, For/Do-While & Defensive Parsing
 │   └── csharp-backend-roadmap.md    # C# & Backend Developer Learning Roadmap
 │
 └── Data/                            # Sample input logs, test manifests, and report outputs
     ├── batch_input.txt              # Sample batch data for Logistics Engine
     ├── remittance_batch_input.txt   # Sample remittance batch data
+    ├── pet_inventory_batch.txt      # Sample batch inventory for Pet Sanctuary Engine
     ├── server_access.log            # Sample web access log for Aegis-SOC Engine
     └── security_incident_report.txt # Auto-generated incident report & firewall drop rules
 ```
@@ -69,6 +72,17 @@ LearningTheBasics/
   * **Interactive SOC Terminal:** Features real-time manual log triage, automated log file ingestion, formatted dossier viewing, and automatic `iptables -A INPUT -s <IP> -j DROP` blacklist script generation.
 * **Run:** Set `Program.cs` to `MileStoneMachine2.Run();`
 
+### 4. Milestone 3: Paws & Whiskers — Pet Sanctuary, Adoption & Clinical Registry Terminal
+* **Focus:** Advanced control flow, low-level delimiter parsing (`IndexOf`, `Substring`, `Remove`, `TrimStart`), stacked `switch-case`, conditional ternary operators (`?:`), in-place array mutation via indexed `for` loops, and reverse traversal.
+* **Core Modules:**
+  * **Method A (`ExtractTagToken`):** Extracts key-value tokens from raw barcode tags without regex or `.Split()`.
+  * **Method B (`ScreenHealthStatus`):** Normalizes medical notes (`.Trim().ToLower()`), scans risk triggers with `.Contains()`, evaluates boolean negations (`!isVaccinated`), and assigns dietary plans.
+  * **Method C (`CalculateAdoptionCosts`):** Multi-species fee routing via stacked `switch-case`, health subsidy calculation via ternary expressions, and VIP adopter discounts.
+  * **Method D (`UpdateAdoptionLedger`):** Mutates parallel collection statuses in-place via an indexed `for` loop, proving why read-only `foreach` iterations fail.
+  * **Method E (`GenerateSanctuarySummary`):** Aggregates intake volume, adoption rates, quarantine holds, and average days in care with divide-by-zero protection.
+* **Specification Document:** [Milestone3_Machine_Problem.pdf](Machine_Problems/Milestone3_Machine_Problem.pdf)
+* **Sample Batch Data:** [pet_inventory_batch.txt](Data/pet_inventory_batch.txt)
+
 ---
 
 ## Comprehensive Learning Notes
@@ -93,6 +107,17 @@ Each milestone includes a dedicated companion note file detailing mental models,
    * Sliding-window frequency analysis with `DateTime` and `TimeSpan`.
    * State management: passing collection references from `Main` to `.IO`.
    * Tally counter search patterns vs premature return traps.
+
+4. [Milestone3Notes.cs](Notes/Milestone3Notes.cs)
+   * Advanced Boolean evaluation, string normalization (`Trim()`, `ToLower()`), and logical negation (`!`).
+   * Conditional ternary expressions (`?:`) and syntax rules inside string interpolation.
+   * Variable scope boundaries `{}`, lifetime, CS0103 context errors, and CS0165 definite assignment analysis.
+   * Microsoft style standards for omitting curly braces and formatting compound if-else statements.
+   * Multi-case matching in `switch-case`, fall-through prevention, and `default` evaluation.
+   * Structural anatomy of `for` loops (6 parts, step patterns, reverse iteration, array mutation vs `foreach` read-only constraint).
+   * `do-while` (post-condition guarantee) vs `while` (pre-condition gatekeeper), `continue` vs `break`.
+   * Defensive input pipelines: non-crashing `int.TryParse`, `string?` null safety, and normalized whitelisting.
+   * Low-level string delimiter extraction using `IndexOf()`, `Substring()`, `Remove()`, and `TrimStart()`.
 
 ---
 
