@@ -1,0 +1,14 @@
+SECURITY OPERATIONS CENTER (SOC) - INCIDENT RESPONSE REPORT
+Generated: 2026-10-25 11:07:17 | Severity Level: HIGH ALERT
+--------------------------------------------------------------------------------
+INCIDENT EVIDENCE LEDGER:
+EVT-5001 | 203.0.113.42 | SQL INJECTION (SQLi) | Target: /products?id=1' UNION SELECT null,password FROM users-- | CRITICAL THREAT
+EVT-5006 | 198.51.100.18 | BENIGN TRAFFIC | Target: /api/login | CRITICAL THREAT (BRUTE)
+EVT-5007 | 45.33.32.156 | Path Traversal (LFI) | Target: /../../../../etc/passwd | CRITICAL THREAT
+--------------------------------------------------------------------------------
+RECOMMENDED FIREWALL REMEDIATION SCRIPT:
+iptables -A INPUT -s 203.0.113.42 -j DROP
+iptables -A INPUT -s 198.51.100.18 -j DROP
+iptables -A INPUT -s 45.33.32.156 -j DROP
+--------------------------------------------------------------------------------
+SUMMARY: Total=8 | Critical=3 | High=0 | Suspicious=0 | Benign=5 | Incident Status: CONTAINED / ACTION REQUIRED

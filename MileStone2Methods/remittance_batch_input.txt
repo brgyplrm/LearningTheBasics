@@ -1,0 +1,4 @@
+TXN-3001,Alice Smith,USD,1000.00,1,Family Support,true,false,25,Bank Deposit,true
+TXN-3002,Victor Markov,EUR,1500.00,2,Commercial Import,true,true,92,Cash Pickup,false
+TXN-3003,Chen Wei,JPY,20000.00,1,Tuition Payment,false,false,45,Mobile Wallet,false
+TXN-3004,Elena Rostova,CAD,3000.00,2,Consulting Services,true,false,30,Bank Deposit,false

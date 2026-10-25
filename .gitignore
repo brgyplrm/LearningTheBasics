@@ -1,0 +1,16 @@
+# Build results
+[Bb]in/
+[Oo]bj/
+artifacts/
+
+# Visual Studio / VS Code
+.vscode/
+.idea/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# OS generated files
+.DS_Store
+Thumbs.db
