@@ -38,13 +38,13 @@ namespace SecurityOps.IO
       string targetFile = filePath;
       if (!File.Exists(targetFile))
       {
-        string subfolderPath = Path.Combine("MileStone2Methods", filePath);
+        string dataPath = Path.Combine("Data", filePath);
+        string projectDataPath = Path.Combine("/home/achyllisss/code/development/School/C#/learning/Data", filePath);
         string projectPath = Path.Combine("/home/achyllisss/code/development/School/C#/learning", filePath);
-        string methodPath = Path.Combine("/home/achyllisss/code/development/School/C#/learning/MileStone2Methods", filePath);
 
-        if (File.Exists(subfolderPath)) targetFile = subfolderPath;
+        if (File.Exists(dataPath)) targetFile = dataPath;
+        else if (File.Exists(projectDataPath)) targetFile = projectDataPath;
         else if (File.Exists(projectPath)) targetFile = projectPath;
-        else if (File.Exists(methodPath)) targetFile = methodPath;
         else
         {
           Console.WriteLine($"\n[ERROR] File not found: {filePath}");

@@ -8,26 +8,40 @@ A structured, foundational repository for mastering modern C# programming, archi
 
 ```text
 LearningTheBasics/
+├── .gitignore                       # Build binary and temporary file filter
+├── README.md                        # Master repository documentation
+├── Program.cs                       # Central launcher dispatch switch
+├── learning.csproj                  # .NET 8.0 SDK project manifest
+│
 ├── Machine_Problems/                # Problem specifications, prompts, and published PDFs
 │   ├── Milestone1_Machine_Problem.pdf
 │   ├── Milestone2_Machine_Problem.pdf
 │   ├── Cybersecurity_IDS_Machine_Problem.pdf
 │   └── FinTech_Remittance_Machine_Problem.pdf
-├── MileStone2Methods/               # Modularized Engine & IO Tier Libraries
-│   ├── CargoCalculation.cs         # Milestone 2: Logistics Calculation Engine
-│   ├── FileReadingIO.cs            # Milestone 2: Batch CSV Ingestion & Manifest Exporter
-│   ├── SecurityCore.cs             # Aegis-SOC: Multi-Vector Threat Detection Engine
-│   └── SecurityIO.cs               # Aegis-SOC: Forensic Log Ingestion, Triage & Exporter
-├── milestone1.cs                    # Milestone 1: Interactive Shipping Fee Calculator
-├── Milestone1Notes.cs               # Milestone 1: Syntax, Conditionals & Logical Operators
-├── Milestone2.cs                    # Milestone 2: Audited Shipping Manifest Dispatcher
-├── Milestone2Notes.cs               # Milestone 2: Loops, Arrays, Methods & File IO
-├── MileStoneMachine2.cs             # Aegis-SOC: Interactive IDS Terminal Entry Point
-├── MilestoneMachine2Notes.cs        # Aegis-SOC: Advanced Slicing, Temporal Analysis & Practices
-├── Program.cs                       # Central launcher dispatch switch
-├── batch_input.txt                  # Sample batch data for Logistics Engine
-├── server_access.log                # Sample web access log for Aegis-SOC Engine
-└── security_incident_report.txt     # Auto-generated incident report & firewall drop rules
+│
+├── Projects/                        # Source implementations grouped by problem
+│   ├── Milestone1_Logistics/
+│   │   └── milestone1.cs            # Milestone 1: Cargo Evaluation & Dispatch System
+│   ├── Milestone2_ShippingManifest/
+│   │   ├── Milestone2.cs            # Milestone 2: Audited Shipping Manifest Dispatcher
+│   │   ├── CargoCalculation.cs     # Calculation Engine (dimensional weight & fees)
+│   │   └── FileReadingIO.cs         # Batch Ingestion and Export IO tier
+│   └── Milestone2_Cybersecurity_IDS/
+│       ├── MileStoneMachine2.cs     # Aegis-SOC: Interactive IDS Terminal Entry Point
+│       ├── SecurityCore.cs          # ThreatEngine (Tokenization, Signatures, Brute-Force)
+│       └── SecurityIO.cs            # ManifestSecIO (Log Reader, Triage, Dossier & Exporter)
+│
+├── Notes/                           # Companion learning notes & architectural review
+│   ├── Milestone1Notes.cs           # Variables, Conditionals & Logical Operators
+│   ├── Milestone2Notes.cs           # Loops, Arrays, Methods & File Streams
+│   ├── MilestoneMachine2Notes.cs    # Slicing, Temporal Analysis & Defensive Rules
+│   └── csharp-backend-roadmap.md    # C# & Backend Developer Learning Roadmap
+│
+└── Data/                            # Sample input logs, test manifests, and report outputs
+    ├── batch_input.txt              # Sample batch data for Logistics Engine
+    ├── remittance_batch_input.txt   # Sample remittance batch data
+    ├── server_access.log            # Sample web access log for Aegis-SOC Engine
+    └── security_incident_report.txt # Auto-generated incident report & firewall drop rules
 ```
 
 ---
@@ -61,18 +75,18 @@ LearningTheBasics/
 
 Each milestone includes a dedicated companion note file detailing mental models, language mechanics, and common beginner pitfalls:
 
-1. [Milestone1Notes.cs](Milestone1Notes.cs)
+1. [Milestone1Notes.cs](Notes/Milestone1Notes.cs)
    * Variables, data types (`decimal` vs `double`), type conversions (`TryParse`).
    * Decision structures (`if`, `else if`, `switch`, ternary operator).
    * Short-circuit evaluation (`&&`, `||`).
 
-2. [Milestone2Notes.cs](Milestone2Notes.cs)
+2. [Milestone2Notes.cs](Notes/Milestone2Notes.cs)
    * Loops: `for`, `foreach`, `while`, `do-while`, loop control (`break`, `continue`).
    * Collections: Fixed arrays (`string[]`) vs dynamic collections (`List<T>`).
    * Modular methods, parameter passing, return types (`void` vs typed returns).
    * Namespaces, using directives, and file handling (`File.ReadAllLines`, `StreamWriter`).
 
-3. [MilestoneMachine2Notes.cs](MilestoneMachine2Notes.cs)
+3. [MilestoneMachine2Notes.cs](Notes/MilestoneMachine2Notes.cs)
    * Why printing `string[]` outputs `"System.String[]"` (Object `.ToString()` mechanics).
    * Modern C# Index (`^1`) and Range (`1..^1`) operators compared with Python slicing.
    * Substring searching (`.Contains()`, `.IndexOf()`) vs exact equality (`==`).

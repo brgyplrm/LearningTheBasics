@@ -1,8 +1,0 @@
-203.0.113.42 [2026-10-23 03:14:02] "GET /products?id=1' UNION SELECT null,password FROM users-- HTTP/1.1" 200 4520 "Mozilla/5.0"
-198.51.100.18 [2026-10-23 03:14:05] "POST /api/login HTTP/1.1" 401 128 "curl/7.68.0"
-198.51.100.18 [2026-10-23 03:14:10] "POST /api/login HTTP/1.1" 401 128 "curl/7.68.0"
-198.51.100.18 [2026-10-23 03:14:15] "POST /api/login HTTP/1.1" 401 128 "curl/7.68.0"
-198.51.100.18 [2026-10-23 03:14:20] "POST /api/login HTTP/1.1" 401 128 "curl/7.68.0"
-198.51.100.18 [2026-10-23 03:14:25] "POST /api/login HTTP/1.1" 401 128 "curl/7.68.0"
-45.33.32.156 [2026-10-23 03:14:30] "GET /../../../../etc/passwd HTTP/1.1" 404 230 "Nikto/2.1.6"
-192.168.1.105 [2026-10-23 03:14:40] "GET /dashboard/profile HTTP/1.1" 200 8920 "Mozilla/5.0 (Windows NT 10.0; Win64)"

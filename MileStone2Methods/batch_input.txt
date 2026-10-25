@@ -1,4 +1,0 @@
-PKG-2001,8.0,30,20,20,2,General Merchandise,8500,true,false
-PKG-2002,15.0,50,40,30,3,Hazardous Material,25000,true,true
-PKG-2003,3.0,20,15,10,1,Perishable Goods,4000,false,false
-PKG-2004,12.5,40,30,25,2,High-Value Electronics,120000,true,true
